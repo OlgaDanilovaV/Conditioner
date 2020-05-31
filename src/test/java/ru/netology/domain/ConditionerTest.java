@@ -9,7 +9,7 @@ class ConditionerTest {
     @Test
     public void increaseCurrentTemperature() {
         Conditioner conditioner = new Conditioner();
-        conditioner.increaseCurrentTemperature;
+        conditioner.increaseCurrentTemperature();
         int expected = 26;
         int actual = conditioner.getCurrentTemperature();
 
@@ -19,7 +19,7 @@ class ConditionerTest {
     @Test
     public void decreaseCurrentTemperature () {
         Conditioner conditioner = new Conditioner();
-        conditioner.decreaseCurrentTemperature;
+        conditioner.decreaseCurrentTemperature();
         int expected = 24;
         int actual = conditioner.getCurrentTemperature();
 

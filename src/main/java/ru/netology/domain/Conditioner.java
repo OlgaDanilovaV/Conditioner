@@ -1,7 +1,7 @@
 package ru.netology.domain;
 
 public class Conditioner {
-    private String name = "BestConditioner";
+    private String name;
     private int maxTemperature = 29;
     private int minTemperature = 19;
     private int currentTemperature = 25;
