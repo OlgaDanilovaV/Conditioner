@@ -10,7 +10,7 @@ class ConditionerTest {
     public void increaseCurrentTemperature() {
         Conditioner conditioner = new Conditioner();
         conditioner.increaseCurrentTemperature();
-        int expected = 26;
+        int expected = 25;
         int actual = conditioner.getCurrentTemperature();
 
         assertEquals(expected,actual);
