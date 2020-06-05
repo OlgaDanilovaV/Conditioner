@@ -9,20 +9,26 @@ class ConditionerTest {
     @Test
     public void increaseCurrentTemperature() {
         Conditioner conditioner = new Conditioner();
-        conditioner.increaseCurrentTemperature();
-        int expected = 25;
-        int actual = conditioner.getCurrentTemperature();
 
-        assertEquals(expected,actual);
+        conditioner.setMaxTemperature(25);
+        conditioner.setMinTemperature(5);
+        conditioner.setCurrentTemperature(25);
+
+        conditioner.setCurrentTemperature(conditioner.getCurrentTemperature() + 1);
+
+        assertEquals(25, conditioner.getCurrentTemperature());
     }
 
     @Test
-    public void decreaseCurrentTemperature () {
+    public void decreaseCurrentTemperature() {
         Conditioner conditioner = new Conditioner();
-        conditioner.decreaseCurrentTemperature();
-        int expected = 24;
-        int actual = conditioner.getCurrentTemperature();
 
-        assertEquals(expected,actual);
+        conditioner.setMaxTemperature(25);
+        conditioner.setMinTemperature(5);
+        conditioner.setCurrentTemperature(5);
+
+        conditioner.setCurrentTemperature(conditioner.getCurrentTemperature() - 1);
+
+        assertEquals(5, conditioner.getCurrentTemperature());
     }
 }
